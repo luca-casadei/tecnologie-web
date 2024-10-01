@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>Esercizio tabella</title>
+    <style>
+      td,
+      th,
+      table {
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>Esercizio Tabella</h1>
+      <table>
+        <caption>
+          Orario delle lezioni
+        </caption>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Lunedì</th>
+            <th>Martedì</th>
+            <th>Mercoledì</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th id="or1">9-10</th>
+            <td rowspan="2" headers="or1 or2">Tecnologie Web</td>
+            <td>Analisi</td>
+            <td rowspan="2" headers="or2 or3">Sistemi Multimediali</td>
+          </tr>
+          <tr>
+            <th id="or2">10-11</th>
+            <td rowspan="2" headers="or1 or2">Sistemi Multimediali</td>
+          </tr>
+          <tr>
+            <th id="or3">11-12</th>
+            <td>Algebra</td>
+            <td>Fisica</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>
